@@ -14,7 +14,3 @@ typedef struct GPS_coord{
     float LON;
 } GPS_coord;
 
-typedef struct Touch_input {
-    Motion_type motion;
-    int positions[10];
-} Touch_input;

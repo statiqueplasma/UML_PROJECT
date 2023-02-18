@@ -44,7 +44,7 @@ private:
     int Altitude;
     Time Time;
     bool btn_pressed;
-    Touch_input user_input;
+    Motion_type user_input;
 };
 
 #endif //_SMARTWATCH_CONTROLLER_H

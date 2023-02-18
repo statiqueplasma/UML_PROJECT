@@ -9,7 +9,7 @@
 class Touch_Screen {
 public: 
     
-Touch_input get_input();
+Motion_type get_input();
 private: 
     int Height;
     int width;
