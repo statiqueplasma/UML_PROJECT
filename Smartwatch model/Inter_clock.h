@@ -2,7 +2,7 @@
  * Project Smartwatch
  */
 
-
+#include<data_type.h>
 #ifndef _INTER_CLOCK_H
 #define _INTER_CLOCK_H
 
@@ -16,7 +16,6 @@ Time get_date();
 void increment();
 private: 
     Time Time;
-    date Date;
 };
 
 #endif //_INTER_CLOCK_H

@@ -2,7 +2,7 @@
  * Project Smartwatch
  */
 
-
+#include<data_type.h>
 #ifndef _MOBILE_APP_H
 #define _MOBILE_APP_H
 
@@ -22,13 +22,12 @@ int Request_GPS();
 float Request_Alt();
 private: 
     Time Time;
-    date Date;
-    Bool Is_Paired;
+    bool Is_Paired;
     int Heart_Rate;
     GPS_coord POS;
     float bat_lvl;
     int Altitude;
-    void user_id;
+    int user_id;
 };
 
 #endif //_MOBILE_APP_H

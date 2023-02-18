@@ -2,11 +2,11 @@
  * Project Smartwatch
  */
 
+#include<data_type.h>
+#ifndef _SMARTWATCH_CONTROLLER_H
+#define _SMARTWATCH_CONTROLLER_H
 
-#ifndef _SMARTWATCH CONTROLLER_H
-#define _SMARTWATCH CONTROLLER_H
-
-class Smartwatch Controller {
+class Smartwatch_Controller {
 public: 
     
 void Toggle_Power();
@@ -38,15 +38,13 @@ void Send_Alt();
 void Send_bat_lvl();
 private: 
     float bat_lvl;
-    Bool Is_Paired;
+    bool Is_Paired;
     GPS_coord POS;
     int Heart_Rate;
     int Altitude;
-    date Date;
     Time Time;
-    bool lo_bu_pressed;
-    bool up_bu_pressed;
-    void user_input;
+    bool btn_pressed;
+    Touch_input user_input;
 };
 
-#endif //_SMARTWATCH CONTROLLER_H
+#endif //_SMARTWATCH_CONTROLLER_H

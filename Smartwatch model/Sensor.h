@@ -7,7 +7,8 @@
 #define _SENSOR_H
 
 class Sensor {
-public: 
+private: 
+    bool measureInProgress;
     
 void Start_measure();
     

@@ -2,11 +2,12 @@
  * Project Smartwatch
  */
 
-
+#include<data_type.h>
 #ifndef _GPS_SENSOR_H
 #define _GPS_SENSOR_H
 
 #include "Sensor.h"
+
 
 class GPS_Sensor: public Sensor {
 public: 

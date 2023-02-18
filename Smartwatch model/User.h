@@ -22,7 +22,7 @@ void Mesure_Alt();
 void App_Cmd();
 private: 
     int Heart_rate;
-    String ID;
+    int ID;
     int Age;
 };
 
