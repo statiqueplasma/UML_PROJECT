@@ -7,19 +7,19 @@
 #define _USER_H
 
 class User {
-public: 
-    
-void Login();
-    
-void Logout();
-    
-void Pair();
-    
-void Mesure_HR();
-    
-void Mesure_Alt();
-    
-void App_Cmd();
+    public: 
+        
+        void Login();
+            
+        void Logout();
+            
+        void Pair();
+            
+        void Mesure_HR();
+            
+        void Mesure_Alt();
+            
+        void App_Cmd();
 private: 
     int Heart_rate;
     int ID;

@@ -10,11 +10,10 @@
 
 
 class Heart_Rate_sensor: public Sensor {
-public: 
-    
-int get_hr();
-private: 
-    int Heart_rate;
+    public:   
+        int get_hr();
+    private: 
+        int Heart_rate;
 };
 
 #endif //_HEART_RATE_SENSOR_H

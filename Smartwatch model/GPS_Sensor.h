@@ -13,8 +13,8 @@ class GPS_Sensor: public Sensor {
 public: 
     
 GPS_coord get_gps();
-private: 
-    GPS_coord POS;
+    private: 
+        GPS_coord POS;
 };
 
 #endif //_GPS_SENSOR_H

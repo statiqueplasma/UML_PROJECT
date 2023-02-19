@@ -10,12 +10,12 @@
 
 
 class Altimeter: public Sensor {
-public: 
-    
-float get_alt();
-private: 
-    float Pressure;
-    float Altitude;
+    public: 
+            
+        float get_alt();
+    private: 
+        float Pressure;
+        float Altitude;
 };
 
 #endif //_ALTIMETER_H

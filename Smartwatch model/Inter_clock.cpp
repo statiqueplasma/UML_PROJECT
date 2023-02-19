@@ -1,31 +1,31 @@
-/**
- * Project Smartwatch
- */
-
-
+// Project Smartwatch
 #include "Inter_clock.h"
+
+// Inter_clock implementation
+// The Inter_clock class is responsible for timekeeping on the smartwatch.
+
 /**
- * Inter_clock implementation
- */
 
-
-/**
- * @return Time
- */
-
+@return Time
+*/
 Time Inter_clock::get_time() {
-    return time;
+// Returns the current time
+return time;
 }
 
 void Inter_clock::set_time(Time& time){
+    // Sets the current time to the provided time
     time = time;
 }
 
 void Inter_clock::increment() {
+    // Increments the time by one second
     bool isLeapYear = ((time.year % 4 == 0) && (time.year % 100 != 0)) || (time.year % 400 == 0);
-    
+    // Check if current year is a leap year
     int daysInMonth;
+    // Variable to hold the number of days in the current month
 
+    // Determine the number of days in the current month
     switch (time.month) {
         case 1: // January
         case 3: // March
@@ -47,6 +47,7 @@ void Inter_clock::increment() {
             break;
     }
 
+    // Increment the time by one second
     if (time.sec == 59)
     {
         time.sec = 00;
@@ -61,9 +62,7 @@ void Inter_clock::increment() {
                     {
                         time.month = 01;
                         time.year++;
-
                     }
-                    
                 }else{
                     time.day++;
                 }
@@ -77,12 +76,6 @@ void Inter_clock::increment() {
         }
     }
     else{
-         time.sec += 1;
+        time.sec += 1;
     }
-    
 }
-
-
-
-    
-    
